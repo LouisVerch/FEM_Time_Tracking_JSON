@@ -82,3 +82,37 @@ ol {
 #__next {
     isolation: isolate;
 }
+
+body {
+    min-height: 100svh;
+    padding: 3rem 1.5rem;
+    display: grid;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+}
+
+.container__main {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container__header {
+    display: grid;
+    grid-template-areas: "a,b" "a,c";
+    background: var(--blue);
+}
+
+.person__avatar {
+    grid-area: "a";
+    max-width: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.ribbon {
+    grid-area: "b";
+}
+
+.h1 {
+    grid-area: "c";
+}
